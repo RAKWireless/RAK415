@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/List_bg"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:paddingTop="1dip" >
+ 
+    <ImageView
+        android:id="@+id/ItemIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        
+        android:paddingTop="1dip"
+        android:layout_gravity="center"
+        android:src="@drawable/a2" />
+	<LinearLayout 
+	    android:orientation="horizontal"
+	    android:layout_width="0dp" 
+	    android:layout_height="wrap_content"
+	    android:layout_weight="4"
+	    >
+	 <LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="0dp"  
+	    android:layout_height="wrap_content"
+	    android:paddingTop="5dip"
+	    android:layout_weight="2"	    
+	    >
+			<TextView
+			android:id="@+id/Module_name"
+			android:layout_height="wrap_content"	
+			android:layout_width="wrap_content"	
+			android:padding="2dp" 
+			android:textStyle="bold|italic" 			
+			android:textSize="12sp" 
+			android:textColor="#FFFFFF"
+			android:layout_gravity="center"
+			/>		
+			
+			<TextView
+		    android:id="@+id/Group_name"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:padding="2dp"
+		    android:textColor="#FFFFFF"
+		    android:textSize="12sp"
+		    android:layout_gravity="center"
+		    />				
+		</LinearLayout>
+		
+		<LinearLayout 
+	    android:orientation="vertical"
+	    android:layout_width="0dp" 
+	    android:layout_height="wrap_content"
+	    android:layout_weight="2"
+	    android:paddingTop="5dip"
+	    >
+			<TextView 
+			android:id="@+id/IP"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:padding="2dp"  
+			android:textSize="12sp" 
+			android:textColor="#FFFFFF"
+			android:layout_gravity="center"
+			/>
+			
+			<TextView 
+			android:id="@+id/MAC"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			android:padding="2dp"  
+			android:textSize="12sp" 
+			android:textColor="#FFFFFF"
+			android:layout_gravity="center"
+			/>
+		</LinearLayout>
+		
+		<TextView 
+		android:id="@+id/RSSI"
+		android:layout_height="wrap_content"
+		android:layout_width="0dp"
+		android:layout_weight="1"
+		android:textSize="12sp" 	
+		android:layout_gravity="center"
+		android:textColor="#00FF7F"
+	    />
+		</LinearLayout>
+
+	<ImageView 
+	android:layout_width="1dp" 
+	android:layout_height="wrap_content"
+	android:paddingTop="5dip"
+	android:id="@+id/ItemChek" 
+	/>  
+
+</LinearLayout> 
